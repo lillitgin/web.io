@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>blueneek</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- body -->
+
+<body class="main-layout margin_to90">
+
+   <!-- header -->
+   <header>
+      <!-- header inner -->
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="index.html"><img src="images/logo.jpg"
+                                 style="height: 120px;width: 400px; margin-top: -35px;" alt="#" /></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <div class="header_information">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                           data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item ">
+                                 <a class="nav-link" href="index.html">网站首页</a>
+                              </li>
+
+                              <li class="nav-item ">
+                                 <a class="nav-link" href="about.html">关于赛事</a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="clients.html">参赛选手</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="ourwork.html">精彩花絮</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.html">联系我们</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" >&nbsp;</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" >&nbsp;</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" >&nbsp;</a>
+                              </li>
+
+                              <li class="nav-item">
+                                 <a class="nav-link" >&nbsp;</a>
+                              </li>
+                           </ul>
+                           <div class="sign_btn"><a href="#">获取参赛资格</a></div>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- end header inner -->
+   <!-- end header -->
+
+   <!-- clients -->
+   <div class="clients">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 offset-md-3">
+               <div class="titlepage">
+                  <h2>参赛选手</h2>
+                  <span></span>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="clients_box" onclick="toggleImage()" id="fullscreen-container">
+                  <style>
+                     .overlay-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: white;
+                        font-size: 25px;
+                     }
+                  </style>
+                  <img id="fullscreen-img" src="images/职业选手1.jpg" style="width: 100%;height: 100%;" />
+                  <div class="overlay-text" id="overlay-text">
+                     CSGO选手jks出生于1995年，如今26岁，来自澳大利亚，是队内的步枪手和自由人，现效力于G2，2022年初作为替补帮助faze拿下了卡托维兹的冠军，有着最强替补传说称号的男人。
+                     许多澳大利亚孩子一样，jks从小就痴迷电子游戏，魔兽世界，星际争霸都曾是他的心头之爱。一次偶然的机会，他接触到了CS，从此便一发不可收拾。2014年，他的过人天赋被当地一支叫Vox
+                     Eminor的队伍发现，很快他被邀请加入队伍，并在随后的时间中代表队伍参加了2014年的ESL One科隆Major预选赛和2015年的ESL
+                     One卡托维茨预选赛，但因为实力不济最终未能晋级，但这段经历也为jks接下来的职业之路奠定的扎实的基础。在代表Vox Eminor出战的最后一项赛事Gfinity 2015 Spring
+                     Masters 2中，jks表现尤为突出，他打出了1.34的赛事Rating，位居所有选手第二。</div>
+
+                  <script>
+                     // JavaScript/jQuery代码
+                     var currentImageIndex = 0;
+                     var images = ['images/职业选手1.jpg', 'images/职业选手2.jpeg']; // 图片数组
+                     var texts = [' CSGO选手jks出生于1995年，如今26岁，来自澳大利亚，是队内的步枪手和自由人，现效力于G2，2022年初作为替补帮助faze拿下了卡托维兹的冠军，有着最强替补传说称号的男人。许多澳大利亚孩子一样，jks从小就痴迷电子游戏，魔兽世界，星际争霸都曾是他的心头之爱。一次偶然的机会，他接触到了CS，从此便一发不可收拾。2014年，他的过人天赋被当地一支叫VoxEminor的队伍发现，很快他被邀请加入队伍，并在随后的时间中代表队伍参加了2014年的ESL One科隆Major预选赛和2015年的ESLOne卡托维茨预选赛，但因为实力不济最终未能晋级，但这段经历也为jks接下来的职业之路奠定的扎实的基础。在代表Vox Eminor出战的最后一项赛事Gfinity 2015 Spring Masters 2中，jks表现尤为突出，他打出了1.34的赛事Rating，位居所有选手第二。', 'ZywOo是继coldzera之后又一个连续获得HLTV年度TOP 1的选手，他在自己出道的2019年就荣登TOP 1，并在2020年延续这一壮举。今年TOP 1的位置属于s1mple，但是ZywOo依旧超过其他选手成为TOP 2。2017年，一个名叫ZywOo新秀从法国低级联赛崭露头角，然而追溯他第一场有HLTV记录的比赛是2016年，当时他代表nevermind出战，在那个队伍他和ropz以及nexa都做过队友。随后，ZywOo获得FPL资格，HLTV在那年夏天撰写了一篇关于他的“明日之星”文章，这一切发生之前，法国巨星shox也表现出了对这个新秀的钦佩，但是当时的G2没能够签下这名日后卫冕TOP 1的选手，因为当时ZywOo的妈妈不想让自己的儿子退学。与此同时，ZywOo加入aAa，带领队伍在2018年夏天获得了ESL Championnat National的冠军，在面对MAXISAUCISSE和LDLC的比赛中他砍下了1.70的rating。']; // 对应图片的文字数组
+                     var imgElement = document.getElementById('fullscreen-img');
+                     var textElement = document.getElementById('overlay-text');
+
+                     function toggleImage() {
+                        if (currentImageIndex < images.length - 1) {
+                           currentImageIndex++;
+                        } else {
+                           currentImageIndex = 0;
+                        }
+
+                        imgElement.src = images[currentImageIndex];
+                        imgElement.style.display = 'block'; // 显示当前图片
+
+                        // 同时更新文字内容
+                        textElement.textContent = texts[currentImageIndex];
+                     }
+
+                     // 页面加载时初始化第一张图片和文字
+                     window.onload = function () {
+                        imgElement.src = images[0];
+                        imgElement.style.display = 'block';
+                        textElement.textContent = texts[0];
+                     };
+                  </script>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- end clients -->
+
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="row border-top">
+               <div class="col-md-6 padding_bottom1   ">
+                  <h3>立即发送</h3>
+                  <form class="footer_form">
+                     <input class="enter" placeholder="输入您的电子邮件" type="type" name="">
+                     <button class="submit">提交</button>
+                  </form>
+               </div>
+               <div class="col-md-6">
+                  <div class="row">
+                     <div class="col-md-5 offset-md-1 padding_bottom1">
+                        <h3>参赛链接</h3>
+                        <ul class="cont">
+                           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-5 offset-md-1">
+                        <h3>联系我们</h3>
+                        <ul class="cont">
+                           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>Copyright &copy;2024Csgo职业比赛介绍网</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+</body>
+
+</html>

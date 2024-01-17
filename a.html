@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>blueneek</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <style>
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 9999;
+        }
+
+        #loading-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <div id="loading">
+        <img id="loading-img" src="images/1.gif" alt="Loading...">
+    </div>
+
+    <script>
+        window.onload = function () {
+            var loadingDiv = document.getElementById('loading');
+            setTimeout(function () {
+                loadingDiv.style.display = 'none';
+            }, 1500);
+        };
+    </script>
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/logo.jpg"
+                                            style="height: 120px;width: 400px; margin-top: -35px;" alt="#" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="header_information">
+                            <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarsExample04" aria-controls="navbarsExample04"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarsExample04">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                           <a class="nav-link" href="" style="font-size: 30px; font-style: italic;">Csgo职业联赛网</a>
+                                        </li>
+                                        
+                                    </ul>
+                                    <div class="sign_btn"><a href="index.html">进入官网</a></div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header inner -->
+    <!-- end header -->
+    <!-- banner -->
+    <div id="myCarousel" class="carousel slide banner_main" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="first-slide" src="images/bg2.png" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption relative" id="img">
+                        <img class="splash-image" src="images/比赛.png" alt="">
+
+                        <style>
+                            .splash-image {
+                                opacity: 0;
+                                /* 初始状态完全透明 */
+                                transition: opacity 1.5s ease-in-out;
+                                /* 添加过渡效果 */
+                                position: fixed;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                max-width: 100%;
+                                height: auto;
+                                z-index: 999;
+                            }
+
+                            .splash-image.visible {
+                                /* 当类名变为可见时，图片将逐渐变得不透明 */
+                                opacity: 1;
+                            }
+                        </style>
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const splashImage = document.querySelector('.splash-image');
+
+                                // 设置2秒钟后图片开始显示
+                                setTimeout(function () {
+                                    splashImage.classList.add('visible');
+                                }, 1500); // 2000毫秒等于2秒
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
